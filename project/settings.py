@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
 
     # register the blog app here:
-    'project.app',
+    'project.blog',
     # register bootstrap
     'bootstrap4'
 ]
