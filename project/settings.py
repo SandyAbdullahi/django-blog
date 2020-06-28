@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'abdullahinurdjangoblog.herokuapp.com'
+    'boiling-sierra-29856.herokuapp.com'
     
 ]
 
