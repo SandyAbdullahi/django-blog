@@ -4,7 +4,11 @@
     <div class="container p-5">
         <h1 class="display text-center">New Posts</h1>
         <hr class="mx-auto">
-
+        {% for post in posts %}
+        <img src="{{ post.post_image.url }}" width="500" alt="">
+          <h3>{{ post.post_title }}</h3>
+          <p>{{ post.post_content }}</p>
+        {% endfor %}
 
     </div>
 {% endblock  %}
