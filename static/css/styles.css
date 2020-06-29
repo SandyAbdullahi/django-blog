@@ -33,6 +33,32 @@ h1,h2,h3,h4,h5 {
 
 }
 
+.user-post {
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.user-post:hover {
+    color: #fff;
+    background-color: #aaa !important;
+    cursor: pointer;
+    
+}
+
+
+
+.static-post {
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.static-post:hover {
+    color: #fff;
+    background-color: #aaa !important;
+    cursor: pointer;
+    
+}
+
 @media only screen and (max-width: 600px) {
     .jumbotron img {
         margin-top: 2.5rem !important;
