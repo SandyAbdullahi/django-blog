@@ -1,3 +1,13 @@
-h1 {
-    color: hotpink !important;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+.jumbotron img {
+    margin-top: -10rem !important;
 }
