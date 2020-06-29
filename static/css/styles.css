@@ -9,6 +9,12 @@ h1,h2,h3,h4,h5 {
     font-family: 'Playfair Display', serif;
 }
 
+.navbar-brand {
+    color: dodgerblue !important;
+    font-weight: 900;
+    transform: rotate(180deg);
+}
+
 .jumbotron img {
     margin-top: 2.5rem !important;
     width: 400px !important;

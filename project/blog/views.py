@@ -10,3 +10,7 @@ def home(request):
         'title': title,
     }
     return render(request, 'pages/home.html', context)
+
+
+def about(request):
+    return render(request, 'pages/about.html')
