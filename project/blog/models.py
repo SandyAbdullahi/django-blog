@@ -5,7 +5,12 @@ class Post(models.Model):
     post_content = models.TextField()
     post_image = models.ImageField(blank=True)
 
-
+    @property
+    def get_photo_url(self):
+        if self.post_image and hasattr(self.post_image, 'url'):
+            return self.post_image.url
+        else:
+            return "unavailable"
 
     class Meta:
         verbose_name = ("Post")
