@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
 
+
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -29,15 +31,26 @@ h1,h2,h3,h4,h5 {
 }
 
 .form {
-    margin-top: 5rem !important;
+    margin-top: 2.5rem !important;
 
 }
 
 .user-post {
     padding: 1rem;
     border-radius: 0.2rem;
+    width: 100%;
 }
 
+.user-post a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.user-post p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
 .user-post:hover {
     color: #fff;
     background-color: #aaa !important;
@@ -62,6 +75,14 @@ h1,h2,h3,h4,h5 {
 .post-view {
     margin-top: 3.5rem !important;
 }
+
+
+.shape {
+    float: left;
+    shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    shape-margin: 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
     

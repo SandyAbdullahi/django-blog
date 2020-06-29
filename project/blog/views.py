@@ -35,7 +35,21 @@ def post_view(request, post_id):
     return render(request, 'pages/post_detail.html', context)
 
 
-
+def update_post(request, post_id):
+    p_id = int(post_id)
+    try:
+        selected_post = models.Post.objects.get(id = p_id)
+    except models.Post.DoesNotExist:
+        return redirect('home')
+    post_form = CreatePostForm(request.POST or None, instance=selected_post)
+    if post_form.is_valid():
+        post_form.save()
+        return redirect('home')
+    context = {
+            'form':post_form
+    }
+    print(request)
+    return render(request, 'forms/update_post.html', context)
 
 
 def about(request):

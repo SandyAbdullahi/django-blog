@@ -19,25 +19,40 @@
 <div class="container p-5">
   <h1 class="display-4 text-center">New Posts</h1>
   <hr class="mx-auto">
+  {% if posts %}
   {% for post in posts %}
-<a href="posts/{{ post.id }}">
-  <div class="row user-post">
-    <div class="col-sm-4">
-      <div class="m-5">
-
-      <img src="{{ post.get_photo_url }}" class="img-fluid w-100" alt="">
+  <div class="user-post">
+    <a href="post/{{ post.id }}/">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="m-5">
+    
+          <img src="{{ post.get_photo_url }}" class="img-fluid w-100" alt="">
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="m-5">
+            <h2>{{ post.post_title }}</h2>
+            <p>{{ post.post_content }}</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-lg-8">
-      <div class="m-5">
-        <h2>{{ post.post_title }}</h2>
-        <p>{{ post.post_content }}</p>
-      </div>
-    </div>
+    </a>
   </div>
-</a>
+  
+      {% endfor %}
+  {% else %}
 
-    {% endfor %}
+  <div class="p-5">
+   
+      <div class="row">
+        <h2 class="text-center">There are currently no new blog posts.</h2>
+      </div>
+ 
+  </div>
+  
+
+  {% endif %}
 
     <div class="container mt-5">
       <h1 class="display-4 text-center">Static Posts</h1>
@@ -46,7 +61,7 @@
         <div class="col-sm-4">
 
           <img
-            src="{% static 'img/django-python-computer-icons-logo-portable-network-graphics-png-favpng-fmTDmunynSK52axsEWGWJeDad.jpg' %}"
+            src="{% static 'img/django-logo-negative.png' %}"
             class="img-fluid w-100" alt="django_logo">
         </div>
         <div class="col-lg-8">

@@ -1,8 +1,8 @@
 from django.db import models
 
 class Post(models.Model):
-    post_title = models.CharField(max_length=50)
-    post_content = models.TextField()
+    post_title = models.CharField(max_length=100)
+    post_content = models.TextField(blank=True)
     post_image = models.ImageField(blank=True)
 
     @property

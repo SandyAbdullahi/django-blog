@@ -4,14 +4,24 @@
     <div class="container post-view">
         <h2 class="text-center display-4">{{ post.post_title}}</h2>
         <hr class="w-50 mx-auto">
-        <div class="row ">
-            <div class="col">
-                <img src="{{ post.get_photo_url }}" class="img-fluid" alt="">
+
+            <div class="shape">
+                <img src="{{ post.get_photo_url }}" class="img-fluid m-3" width="500" alt="">
             </div>
-            <div class="col">
+            <div class="content">
                <p>{{ post.post_content }}</p>
             </div>
-        </div>
+            <br>
+            <div class="container float-right">
+                <div class="row">
+                    <div class="col">
+                        <a class="btn btn-primary" href="/post/{{ post.id }}/update" role="button">Update Post</a>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-danger" href="/post/{{ post.id }}/update" role="button">Delete Post</a>
+                    </div>
+                </div>
+            </div>
     </div>
     
 {% endblock  %}
