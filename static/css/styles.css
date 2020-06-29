@@ -5,16 +5,33 @@
 }
 
 h1,h2,h3,h4,h5 {
+    color: #fff;
     font-family: 'Playfair Display', serif;
 }
 
 .jumbotron img {
-    margin-top: -10rem !important;
+    margin-top: 2.5rem !important;
+    width: 400px !important;
+}
+.jumbotron hr {
+    opacity: 0.4;
 }
 
+.jumbotron a.btn{ 
+    background: dodgerblue !important;
+    border: dodgerblue !important;
+}
 
 @media only screen and (max-width: 600px) {
     .jumbotron img {
-        margin-top: 0rem !important;
+        margin-top: 2.5rem !important;
+        width: 200px !important;
+    }   
+}
+
+@media only screen and (min-width: 1100px) {
+    .jumbotron img {
+        margin-top: 2.5rem !important;
+        width: 300px !important;
     }   
 }
