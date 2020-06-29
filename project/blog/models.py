@@ -3,7 +3,7 @@ from django.db import models
 class Post(models.Model):
     post_title = models.CharField(max_length=50)
     post_content = models.TextField()
-    post_image = models.ImageField()
+    post_image = models.ImageField(blank=True)
 
 
 
