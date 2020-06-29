@@ -27,5 +27,16 @@ def new_post(request):
         }
     return render(request, 'forms/new_post.html', context)
 
+def post_view(request, post_id):
+    posts = models.Post.objects.get(pk=post_id)
+    context = {
+        'post': posts
+    }
+    return render(request, 'pages/post_detail.html', context)
+
+
+
+
+
 def about(request):
     return render(request, 'pages/about.html')
