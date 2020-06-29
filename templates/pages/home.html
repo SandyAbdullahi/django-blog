@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
 <div class="jumbotron jumbotron-fluid text-center vh-100">
   <div class="container text-white ">
       {% include "include/isometric.html" %}
@@ -14,7 +15,7 @@
   </div>
 </div>
 <div class="container p-5">
-  <h1 class="display text-center">New Posts</h1>
+  <h1 class="display-4 text-center">New Posts</h1>
   <hr class="mx-auto">
   {% for post in posts %}
 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
@@ -28,6 +29,23 @@
 </div>
 
   {% endfor %}
+
+  <div class="container">
+    <h1 class="display-4 text-center">Static Posts</h1>
+    <hr class="mx-auto">
+    <div class="row">
+      <div class="col-sm-4">
+
+        <img src="{% static 'img/django-python-computer-icons-logo-portable-network-graphics-png-favpng-fmTDmunynSK52axsEWGWJeDad.jpg' %}" class="img-fluid w-100" alt="django_logo">
+      </div>
+      <div class="col-lg-8">
+        <h2>Why Django?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi, voluptatem perferendis optio illo, veritatis porro illum quae fugiat voluptatum cum, quas veniam culpa quam eligendi at eveniet distinctio possimus?</p>
+      </div>
+    </div>
+
+  </div>
+
 
 </div>
 
