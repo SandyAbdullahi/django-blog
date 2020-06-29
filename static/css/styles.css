@@ -83,6 +83,9 @@ h1,h2,h3,h4,h5 {
     shape-margin: 20px;
 }
 
+.about {
+    margin-top: 10rem !important;
+}
 
 @media only screen and (max-width: 600px) {
     
@@ -98,6 +101,9 @@ h1,h2,h3,h4,h5 {
 
     .my-nav {
         line-height: 0.9;
+        margin-top: 2rem !important;
+    }
+    .about {
         margin-top: 2rem !important;
     }
 }
