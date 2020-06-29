@@ -51,6 +51,15 @@ def update_post(request, post_id):
     print(request)
     return render(request, 'forms/update_post.html', context)
 
+def delete_post(request, post_id):
+    p_id = int(post_id)
+    try:
+        selected_post = models.Post.objects.get(id = p_id)
+    except models.Post.DoesNotExist:
+        return redirect('home')
+    selected_post.delete()
+    return redirect('home')
+
 
 def about(request):
     return render(request, 'pages/about.html')
