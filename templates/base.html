@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    {% include "include/messages.html" %}
+   
     {% include "include/navbar.html" %}
  
 
@@ -32,6 +32,9 @@
     {% endblock  %}
 
     {% block scripts %}
+
+    {% include "include/footer.html" %}
+     {% include "include/messages.html" %}
         <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
