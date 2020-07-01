@@ -139,6 +139,49 @@ footer .bg-dark {
 
 
 
+@media (min-width: 768px) {
+    .about {
+        margin-top: 20rem !important;
+        margin-bottom: 20rem !important;
+    }
+ 
+ 
+    .post-view {
+        margin-bottom: 10rem !important;
+    }
+
+
+   .post-view img {
+        max-width: 330px !important;
+        max-height: 460px !important;
+    }
+}
+
+
+
+
+@media (min-width: 992px) {
+    .about {
+        margin-top: 30rem !important;
+        margin-bottom: 30rem !important;
+    }
+    
+
+    .post-view {
+        margin-bottom: 30rem !important;
+    }
+    
+
+
+
+   .post-view img {
+        max-width: 330px !important;
+        max-height: 460px !important;
+    }
+}
+
+
+
 @media only screen and (min-width: 1100px) {
     .jumbotron img {
 
@@ -151,6 +194,10 @@ footer .bg-dark {
         max-height: 460px;
 
     }
+    .about {
+        margin-top: 15rem !important;
+        margin-bottom: 15rem !important;
+    }
 }
 
 
@@ -161,6 +208,7 @@ footer .bg-dark {
     }
 
     .about {
-        margin-bottom: 25rem !important;
+        margin-top: 15rem !important;
+        margin-bottom: 15rem !important;
     }
 }

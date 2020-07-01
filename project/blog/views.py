@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 
+
 from . import models
 from .forms import CreatePostForm
 
@@ -63,3 +64,6 @@ def delete_post(request, post_id):
 
 def about(request):
     return render(request, 'pages/about.html')
+
+def error404(request):
+    return render(request, 'error/page_not_found.html')

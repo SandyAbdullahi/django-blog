@@ -19,6 +19,7 @@ from project.settings import DEBUG, STATIC_URL, STATICFILES_DIRS, MEDIA_URL, MED
 from django.conf.urls.static import static
 
 urlpatterns = [
+    # path('', include('project.blog.error_urls')),
     path('', include('project.blog.urls')),
     path('admin/', admin.site.urls),
 ] 
