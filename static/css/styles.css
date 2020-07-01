@@ -159,4 +159,8 @@ footer .bg-dark {
 
         width: 300px !important;
     }
+
+    .about {
+        margin-bottom: 25rem !important;
+    }
 }
