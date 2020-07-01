@@ -51,6 +51,11 @@ h5 {
     color: inherit;
 }
 
+
+.user-post img {
+    max-width: 200px;
+    max-height: 240px;
+}
 .user-post p {
     white-space: nowrap;
     overflow: hidden;
@@ -95,7 +100,7 @@ h5 {
 
 .about {
     margin-top: 10rem !important;
-    margin-bottom: 20rem !important; 
+    margin-bottom: 20rem !important;
     height: 100%;
 }
 
@@ -138,6 +143,13 @@ footer .bg-dark {
     .jumbotron img {
 
         width: 100px !important;
+    }
+
+    .post-view img {
+
+        max-width: 330px;
+        max-height: 460px;
+
     }
 }
 
