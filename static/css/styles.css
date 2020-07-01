@@ -6,8 +6,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
-h1,h2,h3,h4,h5 {
-  
+h1,
+h2,
+h3,
+h4,
+h5 {
+
     font-family: 'Playfair Display', serif;
 }
 
@@ -21,11 +25,12 @@ h1,h2,h3,h4,h5 {
 
     width: 400px !important;
 }
+
 .jumbotron hr {
     opacity: 0.4;
 }
 
-.jumbotron a.btn{ 
+.jumbotron a.btn {
     background: dodgerblue !important;
     border: dodgerblue !important;
 }
@@ -49,13 +54,14 @@ h1,h2,h3,h4,h5 {
 .user-post p {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; 
-  }
+    text-overflow: ellipsis;
+}
+
 .user-post:hover {
     color: #fff;
     background-color: #aaa !important;
     cursor: pointer;
-    
+
 }
 
 
@@ -69,13 +75,17 @@ h1,h2,h3,h4,h5 {
     color: #fff;
     background-color: #aaa !important;
     cursor: pointer;
-    
+
 }
 
 .post-view {
     margin-top: 3.5rem !important;
 }
 
+.content {
+    position: relative;
+    margin-bottom: 30rem;
+}
 
 .shape {
     float: left;
@@ -85,26 +95,40 @@ h1,h2,h3,h4,h5 {
 
 .about {
     margin-top: 10rem !important;
+    margin-bottom: 20rem !important; 
+    height: 100%;
+}
+
+
+
+footer .bg-dark {
+    padding: 4rem;
+    color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
-    
-    
+
+
     .jumbotron img {
         margin-top: 2.5rem !important;
         width: 200px !important;
-    }  
-    
+    }
+
     .post-view {
-        margin-top: 6.5rem !important;
+        margin-top: 15rem !important;
+    }
+
+    img {
+        width: 200px !important;
     }
 
     .my-nav {
         line-height: 0.9;
         margin-top: 2rem !important;
     }
+
     .about {
-        margin-top: 2rem !important;
+        margin-top: 15rem !important;
     }
 }
 
@@ -112,15 +136,15 @@ h1,h2,h3,h4,h5 {
 
 @media only screen and (min-width: 1100px) {
     .jumbotron img {
-      
+
         width: 100px !important;
-    }   
+    }
 }
 
 
 @media only screen and (min-width: 1400px) {
     .jumbotron img {
-      
+
         width: 300px !important;
-    }   
+    }
 }
