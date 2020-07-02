@@ -6,7 +6,7 @@ from .forms import CreatePostForm
 
 def home(request):
     posts = models.Post.objects.all()
-    title = 'I am Kek'
+    title = 'Welcome to Ab Log'
     context = {
         'posts': posts,
         'title': title,

@@ -40,6 +40,11 @@ h5 {
 
 }
 
+form .lead {
+   color: dodgerblue !important;
+   font-weight: 900 !important;
+}
+
 .user-post {
     padding: 1rem;
     border-radius: 0.2rem;
@@ -98,10 +103,22 @@ h5 {
     margin-top: 3.5rem !important;
 }
 
+
+
 .content {
     position: relative;
     margin-bottom: 30rem;
 }
+
+/* .content.margin-off p {
+    color: dodgerblue !important;
+} */
+
+.content.margin-off {
+    
+    margin-bottom: 0rem !important;
+}
+
 
 .shape {
     float: left;
@@ -166,6 +183,13 @@ footer .bg-dark {
         max-width: 330px !important;
         max-height: 460px !important;
     }
+    #id_post_title {
+        width: 100% !important;
+    }
+
+    #id_post_content {
+        width: 100% !important;
+    }
 }
 
 
@@ -185,6 +209,15 @@ footer .bg-dark {
    .post-view img {
         max-width: 330px !important;
         max-height: 460px !important;
+    }
+    .post-view .special {
+        max-width: 100% !important;
+    }
+
+
+
+    #id_post_content {
+        width: 100% !important;
     }
 }
 
