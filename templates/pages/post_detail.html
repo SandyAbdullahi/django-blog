@@ -1,28 +1,46 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="container post-view">
-        <h2 class="text-center display-4">{{ post.post_title}}</h2>
-        <hr class="w-50 mx-auto">
+<div class="container post-view">
+    <h2 class="text-center display-4">{{ post.post_title}}</h2>
+    <hr class="w-50 mx-auto">
 
-            <div class="shape">
-                <img src="{{ post.get_photo_url }}" class="img-fluid m-3" alt="">
+        
+    <div class="shape" data-toggle="modal" data-target="#exampleModal">
+        <img src="{{ post.get_photo_url }}" class="img-fluid m-3" alt="user-post" >
+    </div>
+    <div class="content">
+        <p><span class="text-primary h1 font-weight-bold">|</span> {{ post.post_content }}</p>
+    </div>
+    <br>
+    <div class="container text-center float-right">
+        <div class="row">
+            <div class="col">
+                <a class="btn btn-primary" href="/post/{{ post.id }}/update" role="button">Update Post</a>
             </div>
-            <div class="content">
-               <p><span class="text-primary h1 font-weight-bold">|</span> {{ post.post_content }}</p>
+            <div class="col">
+                <a class="btn btn-danger" href="/post/{{ post.id }}/delete" role="button">Delete Post</a>
             </div>
-            <br>
-            <div class="container text-center float-right">
-                <div class="row">
-                    <div class="col">
-                        <a class="btn btn-primary" href="/post/{{ post.id }}/update" role="button">Update Post</a>
+        </div>
+        <small class="font-italic m-2"><span class="text-warning">(</span>click the image to enlarge<span class="text-warning">)</span></small>
+    </div>
+
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+       <div class="modal-dialog model-xl mx-auto">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body">
+                        <img src="{{ post.get_photo_url }}" class="img-fluid special-2" alt="template-code">
                     </div>
-                    <div class="col">
-                        <a class="btn btn-danger" href="/post/{{ post.id }}/delete" role="button">Delete Post</a>
+                    <div class="modal-footer mx-auto">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
     </div>
-  
+
+</div>
 
 {% endblock  %}

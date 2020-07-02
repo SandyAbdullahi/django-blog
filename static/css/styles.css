@@ -56,11 +56,11 @@ form .lead {
     color: inherit;
 }
 
-
+/* 
 .user-post img {
     max-width: 200px;
     max-height: 240px;
-}
+} */
 .user-post p {
     white-space: nowrap;
     overflow: hidden;
@@ -110,13 +110,13 @@ form .lead {
     margin-bottom: 30rem;
 }
 
-/* .content.margin-off p {
-    color: dodgerblue !important;
-} */
-
 .content.margin-off {
     
     margin-bottom: 0rem !important;
+}
+
+.modal-dialog {
+    max-width: 70rem !important;
 }
 
 
@@ -124,6 +124,8 @@ form .lead {
     float: left;
     shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
     shape-margin: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .about {
@@ -210,8 +212,14 @@ footer .bg-dark {
         max-width: 330px !important;
         max-height: 460px !important;
     }
-    .post-view .special {
+    .post-view .special-1 {
+        max-width: 50% !important;
+        max-height: 50% !important;
+    }
+
+    .post-view .special-2 {
         max-width: 100% !important;
+        max-height: 100% !important;
     }
 
 
