@@ -4,19 +4,35 @@
 {% block content %}
 {% load static %}
 <div class="container post-view">
-    <h2 class="text-center display-4">{{ post.post_title}}</h2>
+    <h2 class="text-center display-4">Why Django?</h2>
     <hr class="w-50 mx-auto">
 
-        <div class="shape">
-            <img src="{% static "img/django-logo-negative.png" %}" class="img-fluid m-3" alt="">
-        </div>
-        <div class="content">
-           <p><span class="text-primary h1 font-weight-bold">|</span> {{ post.post_content }}</p>
-        </div>
-        <br>
-        <!-- Don't worry about this I'll come back and change it later -->
-        <div class="container text-center float-right">
+    <div class="shape">
+        <img src="{% static "img/django-logo-negative.png" %}" class="img-fluid m-3" alt="">
+    </div>
+    <div class="content">
+        <p><span class="text-primary h1 font-weight-bold">|</span>So I chose to use Django v3.0 (The version doesn’t
+            really matter). Django is an open-source framework used to handle back-end functionality of web based
+            applications using python. However, in my opinion it was a joy to work with when developing front end UI/Ux
+            using the template view system and the core architecture that is the Model View Controller. The framework
+            has simple syntax that was easy to follow and reference later when importing modules in between one another.
+            Including static files such as Style sheets and JavaScript into specific templates was very simple and quick
+            to implement. Meaning rapid prototyping of small scale applications is very plausible.</p>
 
-        </div>
+        <p>Applying CRUD features was very straight forward as Django already comes pre-built with a load of functions
+            and models. For example when handling User Authentication, a developer can easily import the built in User
+            creation form (for handling user registration). There after the developer can use the in built user login,
+            logout, password change views, to handle the rest of the User authentication functionality.</p>
+
+        <p>Originally when starting out with the documentation for Django, I took the TDD( Test Driven Development)
+            approach. Where a developer would test for behaviors that haven’t been built yet, after which the developer
+            would build those behaviors in turn passing those tests. For my applications, I chose to follow a more BDD (
+            Behavior Driven Development), where the development of the applications followed the user stories more.</p>
+    </div>
+    <br>
+    <!-- Don't worry about this I'll come back and change it later -->
+    <div class="container text-center float-right">
+
+    </div>
 </div>
 {% endblock  %}

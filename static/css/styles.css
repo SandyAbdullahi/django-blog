@@ -71,12 +71,23 @@ h5 {
 
 
 
-.static-post {
+.static-post .row {
     padding: 1rem;
     border-radius: 0.2rem;
 }
 
-.static-post:hover {
+.static-post p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.static-post a {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.static-post .row:hover {
     color: #fff;
     background-color: #aaa !important;
     cursor: pointer;
