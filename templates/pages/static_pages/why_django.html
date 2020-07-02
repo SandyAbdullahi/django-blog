@@ -1,5 +1,22 @@
 {% extends 'base.html' %}
 
+
 {% block content %}
-    <h1>Why Django</h1>
+{% load static %}
+<div class="container post-view">
+    <h2 class="text-center display-4">{{ post.post_title}}</h2>
+    <hr class="w-50 mx-auto">
+
+        <div class="shape">
+            <img src="{% static "img/django-logo-negative.png" %}" class="img-fluid m-3" alt="">
+        </div>
+        <div class="content">
+           <p><span class="text-primary h1 font-weight-bold">|</span> {{ post.post_content }}</p>
+        </div>
+        <br>
+        <!-- Don't worry about this I'll come back and change it later -->
+        <div class="container text-center float-right">
+
+        </div>
+</div>
 {% endblock  %}

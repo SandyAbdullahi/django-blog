@@ -65,5 +65,14 @@ def delete_post(request, post_id):
 def about(request):
     return render(request, 'pages/about.html')
 
+
+def why_django(request):
+    return render(request, 'pages/static_pages/why_django.html')
+
+
+
+
+# ERROR PAGES
+
 def error404(request):
     return render(request, 'error/page_not_found.html')
