@@ -24,6 +24,7 @@ h5 {
 .jumbotron {
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     color: #fff;
+    min-height: 100vh;
 }
 
 .jumbotron hr {
@@ -145,4 +146,11 @@ form .lead {
 footer .bg-dark {
     padding: 4rem;
     color: #fff;
+}
+
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: 10rem;
+    }
 }
