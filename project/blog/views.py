@@ -69,6 +69,9 @@ def about(request):
 def why_django(request):
     return render(request, 'pages/static_pages/why_django.html')
 
+def deploy_django(request):
+    return render(request, 'pages/static_pages/how_to_deploy.html')
+
 
 
 

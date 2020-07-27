@@ -2,19 +2,19 @@
 
 {% block content %}
 {% load static %}
-<div class="jumbotron jumbotron-fluid text-center vh-100">
-  <div class="container text-white ">
+<div class="jumbotron jumbotron-fluid text-center">
+ 
     {% include "include/isometric.html" %}
     <h1 class="display-3 font-weight-bold">Ab Log</h1>
     <p class="lead font-weight-bold">Welcome to My <a href="https://www.djangoproject.com/"><span
           class="text-success">Django</span></a> Blog</p>
     <hr class="my-2">
-    <p class="text-info">You can create new posts bellow. However due to some of heroku's <a href="https://help.heroku.com/K1PPS2WM/why-are-my-file-uploads-missing-deleted"><span class="text-warning">RESTRICTIONS</span></a>, uploaded images
+    <p>You can create new posts bellow. However due to some of heroku's <a href="https://help.heroku.com/K1PPS2WM/why-are-my-file-uploads-missing-deleted"><span class="text-warning">RESTRICTIONS</span></a>, uploaded images
       will disappear within a few hours. The posts made by me are the static ones.</p>
-    <p class="lead">
+    <p class="lead mb-5">
       <a class="btn btn-primary btn-lg" href="{% url 'new_post' %}" role="button">New Post</a>
     </p>
-  </div>
+
 </div>
 <div class="container p-5">
   <h1 class="display-4 text-center">New Posts</h1>
@@ -72,9 +72,25 @@
       </div>
       </a>
 
+    <a href="{% url 'deploy_django' %}">
+      <div class="row ">
+        <div class="col-sm-4">
+
+          <img
+            src="{% static 'img/Heroku_logo.png' %}"
+            class="img-thumbnail" alt="django_logo">
+        </div>
+        <div class="col-lg-8">
+          <h2>How to Deploy a Django App to Heroku.</h2>
+          <p>Deploying your django app to heroku can be quite daunting when you’re a beginner, especially when you don’t understand what some of the addons required (e.g. dj-database-url) do to help configure your app for Heroku.</p>
+        </div>
+      </div>
+      </a>
+
     </div>
 
 
   </div>
 
   {% endblock  %}
+

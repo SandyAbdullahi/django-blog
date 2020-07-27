@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% load static %}
+<div class="container post-view">
+    <h2 class="text-center display-4">How to Deploy a Django App to Heroku</h2>
+    <hr class="w-50 mx-auto">
+
+    <div class="shape">
+        <img src="{% static "img/Heroku_logo.png" %}" class="img-fluid m-3" alt="">
+    </div>
+    <div class="content margin-off">
+        <p><span class="text-primary h1 font-weight-bold">|</span>Deploying your Django app to Heroku can be quite daunting when you’re a beginner, especially when you don’t understand what some of the addons required (e.g. Dj-database-url) do to help configure your app for Heroku. In order to understand how this method works and what the various modules that are imported into your app do. We need to go through a step by step process of deployment, where at each step I will explain  why we install certain addons and we create files that run specific commands.</p>
+        <p>Before starting, you need to sign up for a Heroku account. If you already have one then confirm that you have the Heroku CLI Installed on your machine. In order to do that, you must have git installed first because Heroku relies on Github to stage your changes and any updates that you commit and push to your repository. So if you already have Git installed then we can move on to step 1, other wise you need to go here.</p>
+        <img src="{% static 'img/heroku.png' %}" class="img-fluid special-1" alt="template-code" data-toggle="modal"
+            data-target="#staticBackdrop">
+        <blockquote>
+            <small class="font-weight-light font-italic">Django View for this app</small>
+        </blockquote>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog model-xl mx-auto">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body mx-auto">
+                        <img src="{% static 'img/heroku.png' %}" class="img-fluid special-2" alt="template-code">
+                    </div>
+                    <div class="modal-footer mx-auto">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <br>
+    <!-- Don't worry about this I'll come back and change it later -->
+    <div class="container text-center float-right">
+
+    </div>
+</div>
+{% endblock  %}
