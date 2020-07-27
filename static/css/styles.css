@@ -63,6 +63,12 @@ h5 {
     border: dodgerblue !important;
 }
 
+
+.jumbotron .info-links:hover {
+    text-decoration-color: #fff;
+}
+
+
 .jumbotron p {
     width: 80%;
     margin: auto;

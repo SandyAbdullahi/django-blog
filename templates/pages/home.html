@@ -6,10 +6,10 @@
  
     {% include "include/isometric.html" %}
     <h1 class="display-3 font-weight-bold">Ab Log</h1>
-    <p class="lead font-weight-bold">Welcome to My <a href="https://www.djangoproject.com/"><span
+    <p class="lead font-weight-bold">Welcome to My <a href="https://www.djangoproject.com/" class="info-links"><span
           class="text-success">Django</span></a> Blog</p>
     <hr class="my-2">
-    <p>You can create new posts bellow. However due to some of heroku's <a href="https://help.heroku.com/K1PPS2WM/why-are-my-file-uploads-missing-deleted"><span class="text-warning">RESTRICTIONS</span></a>, uploaded images
+    <p>You can create new posts bellow. However due to some of heroku's <a href="https://help.heroku.com/K1PPS2WM/why-are-my-file-uploads-missing-deleted" class="info-links"><span class="text-warning">RESTRICTIONS</span></a>, uploaded images
       will disappear within a few hours. The posts made by me are the static ones.</p>
     <p class="lead mb-5">
       <a class="btn btn-primary btn-lg" href="{% url 'new_post' %}" role="button">New Post</a>
