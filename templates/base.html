@@ -27,16 +27,20 @@
 
 <body>
    
-    {% include "include/navbar.html" %}
- 
+    
+    <div class="site">
+        <div class="site-content">
+            {% include "include/navbar.html" %}
+            {% block content %}
+            {% endblock  %}
 
-    {% block content %}
-    {% endblock  %}
+            {% include "include/footer.html" %}
+            {% include "include/messages.html" %}
+        </div>
+    </div>
 
     {% block scripts %}
 
-  {% include "include/footer.html" %}
-  {% include "include/messages.html" %}
 
         <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
