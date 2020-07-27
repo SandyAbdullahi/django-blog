@@ -151,6 +151,18 @@ footer .bg-dark {
 
 @media (min-width: 768px) {
     .jumbotron {
-        padding-top: 10rem;
+        padding-top: 10rem;        
+    }
+    .jumbotron p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .jumbotron {
+        padding-top: 13rem;        
+    }
+    .jumbotron p {
+        font-size: 2rem;
     }
 }
