@@ -121,6 +121,12 @@ h5 {
     }
 }
 
+@media (min-width: 1200px) {
+    .jumbotron {
+        padding-top: 6rem;
+    }
+}
+
 
 /* //////////////////////// */
 @keyframes animationFrames {
