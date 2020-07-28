@@ -98,6 +98,15 @@ h5 {
     width: 200px;
 }
 
+.about {
+    min-height: 80vh;
+    padding: 10rem 0rem 20rem 0rem;
+}
+.about hr {
+    margin: auto;
+    width: 75%;
+}
+
 footer {
     position: relative;
     bottom: 0px;
@@ -115,18 +124,13 @@ footer .my-container {
     .jumbotron p {
         font-size: 1.2rem;
     }
-    .about {
-        justify-content: center;
-        margin: 15rem 0rem 20rem 0rem;
-    }
-    .about p {
-        width: 80%;
-        margin: auto;
-    }
-    
+
     .card-img-top {
         max-width: 35%;
         margin: auto;
+    }
+    .about p {
+        font-size: 1.2rem;
     }
 }
 
@@ -140,6 +144,12 @@ footer .my-container {
     }
     .jumbotron img {
         width: 400px;
+    }
+    .about h1 {
+        font-size: 4rem;
+    }
+    .about p {
+        font-size: 1.5rem;
     }
 }
 
