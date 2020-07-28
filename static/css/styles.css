@@ -106,6 +106,9 @@ h5 {
     margin: auto;
     width: 75%;
 }
+.card-text {
+    color: dodgerblue;
+}
 
 .post-view {
     padding-top: 13rem;

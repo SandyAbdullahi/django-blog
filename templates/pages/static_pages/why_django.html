@@ -11,34 +11,50 @@
         <img src="{% static "img/django-logo-negative.png" %}" class="img-fluid" alt="">
     </div>
     <div class="content margin-off">
-        <p><span class="text-primary h1 font-weight-bold">|</span>So I chose to use Django v3.0 (The version doesn’t
-            really matter). Django is an open-source framework used to handle back-end functionality of web based
-            applications using python. However, in my opinion it was a joy to work with when developing front end UI/Ux
+        <p><span class="text-primary h2 font-weight-bold">|</span>So I chose to use Django v3.0 (The version doesn’t
+            matter). Django is an open-source framework used to handle the back-end functionality of web-based
+            applications using python. However, in my opinion, it was a joy to work with when developing front end UI/Ux
             using the template view system and the core architecture that is the Model View Controller. The framework
-            has simple syntax that was easy to follow and reference later when importing modules in between one another.
-            Including static files such as Style sheets and JavaScript into specific templates was very simple and quick
-            to implement. Meaning rapid prototyping of small scale applications is very plausible.</p>
+            has a simple syntax that was easy to follow and reference later when importing modules in between one
+            another. Including static files such as Style sheets and JavaScript into specific templates was very simple
+            and quick to implement. Meaning the rapid prototyping of small scale applications is very plausible.</p>
 
         <p>Applying CRUD features was very straight forward as Django already comes pre-built with a load of functions
-            and models. For example when handling User Authentication, a developer can easily import the built in User
-            creation form (for handling user registration). There after the developer can use the in built user login,
+            and models. For example, when handling User Authentication, a developer can easily import the built-in User
+            creation form (for handling user registration). After which the developer can use the inbuilt user login,
             logout, password change views, to handle the rest of the User authentication functionality.</p>
 
-        <p>Originally when starting out with the documentation for Django, I took the TDD( Test Driven Development)
+        <p>Originally when starting with the documentation for Django, I took the TDD( Test Driven Development)
             approach. Where a developer would test for behaviors that haven’t been built yet, after which the developer
-            would build those behaviors in turn passing those tests. For my applications, I chose to follow a more BDD (
-            Behavior Driven Development), where the development of the applications followed the user stories more.</p>
+            would build those behaviors, in turn, passing those tests.</p>
 
         <img src="{% static 'img/code_1.png' %}" class="img-fluid special-1" alt="template-code" data-toggle="modal"
-            data-target="#staticBackdrop">
+            data-target="#modelOne">
         <blockquote>
             <small class="font-weight-light font-italic">Django View for this app</small>
         </blockquote>
+        <hr>
+        <p>For the development of my applications, I chose to follow a more BDD (Behavior Driven Development) approach,
+            where the development of the applications followed the user stories more. I would build the features based
+            on the functionality of the application and the necessary views and templates for the desired behavior of
+            the app.</p>
 
 
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-            role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <img src="{% static 'img/django_backend.png' %}" class="img-fluid special-1" alt="template-code"
+            data-toggle="modal" data-target="#modelTwo">
+
+        <blockquote>
+            <small class="font-weight-light font-italic">Django Admin view</small>
+        </blockquote>
+        <hr>
+
+        <p>In conclusion, I found Django to be an amazing and intuitive framework to implement. Writing view functions and porting new modules was a breeze. However, with the frameworks' abundance of modules and third-party packages. I fear that I have only just scratched the surface of Django's capabilities. On the other hand, it is a journey of discovery that I welcome greatly, my experience with Django has left me wanting to learn more about the framework and its features.</p>
+
+
+
+        <!-- Modal one -->
+        <div class="modal fade" id="modelOne" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog model-xl mx-auto">
                 <div class="modal-content bg-transparent border-0">
                     <div class="modal-body mx-auto">
@@ -50,7 +66,21 @@
                 </div>
             </div>
         </div>
-
+        <!-- Modal two -->
+        <div class="modal fade" id="modelTwo" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog model-xl mx-auto">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body mx-auto">
+                        <img src="{% static 'img/django_backend.png' %}" class="img-fluid special-2"
+                            alt="template-code">
+                    </div>
+                    <div class="modal-footer mx-auto">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
