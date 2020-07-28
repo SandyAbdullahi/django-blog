@@ -1,9 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&family=Rowdies:wght@700&display=swap');
 
 
 
 * {
     font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    border-color: #fff;
+    transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.btn-primary:hover {
+    background-color: dodgerblue !important;
+    color: gold;
 }
 
 h1,
@@ -29,6 +39,7 @@ h5 {
     color: dodgerblue !important;
     font-weight: 900;
     transform: rotate(180deg);
+    font-family: 'Rowdies', cursive;
 }
 
 .jumbotron {
@@ -87,8 +98,14 @@ h5 {
     width: 200px;
 }
 
+footer {
+    position: relative;
+    bottom: 0px;
+}
+footer .container-fluid {
+    padding: 4rem;
 
-
+}
 
 @media (min-width: 768px) {
     .jumbotron {
@@ -104,6 +121,11 @@ h5 {
     }
     .about p {
         width: 80%;
+        margin: auto;
+    }
+    
+    .card-img-top {
+        max-width: 35%;
         margin: auto;
     }
 }

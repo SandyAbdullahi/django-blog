@@ -19,28 +19,23 @@
 <div class="container">
   <h1 class="display-4 text-center">New Posts</h1>
   <hr>
-  {% if posts %}
-  {% for post in posts %}
-  <div class="user-post">
-    <a href="post/{{ post.id }}/">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="m-5">
-    
-          <img src="{{ post.get_photo_url }}" class="img-thumbnail" alt="">
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="m-5">
-            <h2>{{ post.post_title }}</h2>
-            <p>{{ post.post_content }}</p>
+  <div class="row">
+    <div class="col-12 ">
+      {% if posts %}
+      {% for post in posts %}
+          <div class="card mb-3 border-0 text-center">
+            <img src="{{ post.get_photo_url }}" class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+              <h2 class="card-title font-weight-bold">{{ post.post_title }}</h2>
+              <hr>
+              <p class="card-text">{{ post.post_content|truncatechars:250 }}</p>
+              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+              <a href="post/{{ post.id }}/" class="btn btn-primary">Read More</a>
+            </div>
           </div>
         </div>
       </div>
-    </a>
-  </div>
-  
-      {% endfor %}
+  {% endfor %}
   {% else %}
 
   <div class="p-5">
@@ -56,37 +51,32 @@
 
     <div class="container mt-5 static-post">
       <h1 class="display-4 text-center">Static Posts</h1>
-      <hr class="mx-auto">
-      <a href="{% url 'why_django' %}">
-      <div class="row ">
-        <div class="col-sm-4">
+      <hr>
+      <div class="row">
+        <div class="col-12 col-md-12">
+              <div class="card mb-3 border-0 text-center">
+                <img src="{% static 'img/django-logo-negative.png' %}" class="card-img-top img-thumbnail" alt="static_image">
+                <div class="card-body">
+                  <h2 class="card-title font-weight-bold">Why Django?</h2>
+                  <hr>
+                  <p class="card-text">So I chose to use Django v3.0 (The version doesn’t really matter). Django is an open-source framework used to handle back-end functionality of web based...</p>
+                  <a href="{% url 'why_django' %}" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
 
-          <img
-            src="{% static 'img/django-logo-negative.png' %}"
-            class="img-thumbnail" alt="django_logo">
-        </div>
-        <div class="col-lg-8">
-          <h2>Why Django?</h2>
-          <p>So I chose to use Django v3.0 (The version doesn’t really matter). Django is an open-source framework used to handle back-end functionality of web based</p>
-        </div>
-      </div>
-      </a>
-
-    <a href="{% url 'deploy_django' %}">
-      <div class="row ">
-        <div class="col-sm-4">
-
-          <img
-            src="{% static 'img/Heroku_logo.png' %}"
-            class="img-thumbnail" alt="django_logo">
-        </div>
-        <div class="col-lg-8">
-          <h2>How to Deploy a Django App to Heroku.</h2>
-          <p>Deploying your django app to heroku can be quite daunting when you’re a beginner, especially when you don’t understand what some of the addons required (e.g. dj-database-url) do to help configure your app for Heroku.</p>
-        </div>
-      </div>
-      </a>
-
+            <div class="col-12 col-md-12">
+              <div class="card mb-3 border-0 text-center">
+                <img src="{% static 'img/Heroku_logo.png' %}" class="card-img-top img-thumbnail" alt="static_image">
+                <div class="card-body">
+                  <h2 class="card-title font-weight-bold">How to Deploy a Django App to Heroku.</h2>
+                  <hr>
+                  <p class="card-text">Deploying your django app to heroku can be quite daunting when you’re a beginner, especially when you don’t understand what some of the addons required (e.g. dj-database-url) do to help configure your app for Heroku...</p>
+                  <a href="{% url 'deploy_django' %}" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 
 
