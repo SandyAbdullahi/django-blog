@@ -32,11 +32,10 @@ h5 {
 }
 
 .jumbotron {
+    padding-top: 10rem;
     background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     color: #fff;
     min-height: 100vh;
-
-
     animation: animationFrames ease 1s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
@@ -84,115 +83,11 @@ h5 {
     margin: auto;
 }
 
-.form {
-    margin-top: 2.5rem !important;
-
-}
-
-form .lead {
-    color: dodgerblue !important;
-    font-weight: 900 !important;
-}
-
-.user-post {
-    padding: 1rem;
-    border-radius: 0.2rem;
-    width: 100%;
-}
-
-.user-post a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* 
-.user-post img {
-    max-width: 200px;
-    max-height: 240px;
-} */
-.user-post p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.user-post:hover {
-    color: #fff;
-    background-color: #aaa !important;
-    cursor: pointer;
-
+.jumbotron img {
+    width: 200px;
 }
 
 
-
-.static-post .row {
-    padding: 1rem;
-    border-radius: 0.2rem;
-}
-
-.static-post p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.static-post a {
-    color: #000 !important;
-    text-decoration: none;
-}
-
-.static-post .row:hover {
-    color: #fff;
-    background-color: #aaa !important;
-    cursor: pointer;
-
-}
-
-.post-view {
-    margin-top: 3.5rem !important;
-}
-
-
-
-.content {
-    position: relative;
-    margin-bottom: 30rem;
-}
-
-.content.margin-off {
-
-    margin-bottom: 0rem !important;
-}
-
-
-.modal-dialog {
-    max-width: 70rem !important;
-}
-
-
-.shape {
-    float: left;
-    shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-    shape-margin: 20px;
-    position: relative;
-    z-index: 1;
-}
-
-.about {
-    margin: 10rem 0rem 20rem 0rem;
-}
-
-
-footer {
-    position: relative;
-    bottom: 0px;
-}
-
-
-footer .bg-dark {
-    padding: 4rem;
-    color: #fff;
-}
 
 
 @media (min-width: 768px) {
