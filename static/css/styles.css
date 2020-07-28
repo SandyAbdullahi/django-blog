@@ -107,6 +107,10 @@ h5 {
     width: 75%;
 }
 
+.post-view {
+    padding-top: 13rem;
+}
+
 footer {
     position: relative;
     bottom: 0px;
@@ -131,6 +135,14 @@ footer .my-container {
     }
     .about p {
         font-size: 1.2rem;
+    }
+    .post-view {
+        padding-top: 6rem;
+    }
+    .shape img {
+        float: left;
+        width: 50%;
+        margin: 1.3rem;
     }
 }
 
