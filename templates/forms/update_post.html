@@ -2,14 +2,14 @@
 
 {% block content %}
 
-<div class="form text-center container p-5">
+<div class="update-form text-center container">
         <h3 class="h1 text-primary">Update Post Here:</h3>
             <hr class="w-50 mx-auto">
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {% for fields in form %}
             <p class="lead">{{ fields.label }}:</p>
-            <p class="rounded">{{ fields }}</p>
+            <p>{{ fields }}</p>
         
         {% endfor %}
         <button type="submit" class="btn btn-lg btn-primary">Submit</button>

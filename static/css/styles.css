@@ -11,6 +11,7 @@
     border-color: #fff;
     transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
+
 .btn-primary:hover {
     background-color: dodgerblue !important;
     color: gold;
@@ -24,10 +25,11 @@ h5 {
 
     font-family: 'Playfair Display', serif;
 }
+
 .site {
     display: flex;
     flex-direction: column;
-    min-height:100vh;
+    min-height: 100vh;
 }
 
 .site-content {
@@ -102,18 +104,41 @@ h5 {
     min-height: 80vh;
     padding: 10rem 0rem 20rem 0rem;
 }
+
 .about hr {
     margin: auto;
     width: 75%;
 }
+
 .card-text {
     color: dodgerblue;
 }
+
+.post-view {
+    padding-top: 15rem;
+}
+
+.shape img {
+
+    float: left;
+}
+
+.update-form {
+    padding-top: 15rem;
+    margin-bottom: 5rem;
+}
+
+.update-form textarea {
+    max-width: 90%;
+}
+
+
 
 footer {
     position: relative;
     bottom: 0px;
 }
+
 footer .my-container {
     padding: 4rem;
 
@@ -132,9 +157,41 @@ footer .my-container {
         max-width: 35%;
         margin: auto;
     }
+
     .about p {
         font-size: 1.2rem;
     }
+
+    .post-view {
+        padding-top: 10rem;
+    }
+    
+
+    .update-form {
+        padding-top: 5rem;
+       
+    }
+
+    .shape img {
+        max-width: 30rem;
+        margin: 1rem;
+    }
+    .modal-open .modal {
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    .modal.modal-wide .modal-dialog {
+        width: 90%;
+    }
+    .modal-wide .modal-body {
+        overflow-y: auto;
+    }
+    .modal-dialog {
+        max-width: 100% !important;
+    }
+      
+
 }
 
 @media (min-width: 992px) {
@@ -145,12 +202,15 @@ footer .my-container {
     .jumbotron p {
         font-size: 1.7rem;
     }
+
     .jumbotron img {
         width: 400px;
     }
+
     .about h1 {
         font-size: 4rem;
     }
+
     .about p {
         font-size: 1.5rem;
     }

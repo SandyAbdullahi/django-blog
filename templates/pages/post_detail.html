@@ -7,22 +7,23 @@
 
         
     <div class="shape" data-toggle="modal" data-target="#exampleModal">
-        <img src="{{ post.get_photo_url }}" class="img-fluid m-3" alt="user-post" >
+            <small class="font-italic m-2"><span class="text-warning">(</span>click the image to enlarge<span class="text-warning">)</span></small>
+        <img src="{{ post.get_photo_url }}" class="img-fluid" alt="user-post" >
     </div>
     <div class="content">
         <p><span class="text-primary h1 font-weight-bold">|</span> {{ post.post_content }}</p>
     </div>
     <br>
-    <div class="container text-center float-right">
+    <div class="container text-center mb-5">
         <div class="row">
             <div class="col">
-                <a class="btn btn-primary" href="/post/{{ post.id }}/update" role="button">Update Post</a>
+                <a class="btn btn-info" href="/post/{{ post.id }}/update" role="button">Update</a>
             </div>
             <div class="col">
-                <a class="btn btn-danger" href="/post/{{ post.id }}/delete" role="button">Delete Post</a>
+                <a class="btn btn-danger" href="/post/{{ post.id }}/delete" role="button">Delete</a>
             </div>
         </div>
-        <small class="font-italic m-2"><span class="text-warning">(</span>click the image to enlarge<span class="text-warning">)</span></small>
+
     </div>
 
     <!-- Modal -->
@@ -32,7 +33,7 @@
        <div class="modal-dialog model-xl mx-auto">
                 <div class="modal-content bg-transparent border-0">
                     <div class="modal-body">
-                        <img src="{{ post.get_photo_url }}" class="img-fluid special-2" alt="template-code">
+                        <img src="{{ post.get_photo_url }}" class="img-fluid" alt="template-code">
                     </div>
                     <div class="modal-footer mx-auto">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

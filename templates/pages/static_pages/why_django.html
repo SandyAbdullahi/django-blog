@@ -53,13 +53,15 @@
 
 
         <!-- Modal one -->
-        <div class="modal fade" id="modelOne" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        <div class="modal fade modal-wide" id="modelOne" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog model-xl mx-auto">
+            <div class="modal-dialog">
                 <div class="modal-content bg-transparent border-0">
-                    <div class="modal-body mx-auto">
-                        <img src="{% static 'img/code_1.png' %}" class="img-fluid" alt="template-code">
-                    </div>
+              
+                        <img src="{% static 'img/code_1.png' %}" class="d-none d-sm-none d-md-block" alt="template-code">
+
+                        <img src="{% static 'img/code_1.png' %}" class="img-fluid d-sm-block d-md-none" alt="template-code">
+            
                     <div class="modal-footer mx-auto">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
@@ -72,7 +74,7 @@
             <div class="modal-dialog model-xl mx-auto">
                 <div class="modal-content bg-transparent border-0">
                     <div class="modal-body mx-auto">
-                        <img src="{% static 'img/django_backend.png' %}" class="img-fluid special-2"
+                        <img src="{% static 'img/django_backend.png' %}" class="img-fluid"
                             alt="template-code">
                     </div>
                     <div class="modal-footer mx-auto">
