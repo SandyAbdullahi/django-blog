@@ -132,6 +132,15 @@ h5 {
     max-width: 90%;
 }
 
+.new-post-form {
+    padding-top: 15rem;
+    margin-bottom: 5rem;
+}
+
+.new-post-form textarea {
+    max-width: 90%;
+}
+
 
 
 footer {
